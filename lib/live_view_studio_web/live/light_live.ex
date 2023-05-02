@@ -12,7 +12,7 @@ defmodule LiveViewStudioWeb.LightLive do
     <div id="light">
       <div class="meter">
         <span>
-          <%= assigns.brightness %>%
+          <%= @brightness %>%
 
         </span>
       </div>

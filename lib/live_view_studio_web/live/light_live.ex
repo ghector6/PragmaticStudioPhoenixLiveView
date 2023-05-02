@@ -19,6 +19,12 @@ defmodule LiveViewStudioWeb.LightLive do
       <button phx-click="off">
           <img src="/images/light-off.svg">
       </button>
+      <button phx-click="down">
+          <img src="/images/down.svg">
+      </button>
+      <button phx-click="up">
+          <img src="/images/up.svg">
+      </button>
       <button phx-click="on">
           <img src="/images/light-on.svg">
       </button>

@@ -19,6 +19,9 @@ defmodule LiveViewStudioWeb.LightLive do
       <button>
           <img src="/images/light-off.svg">
       </button>
+      <button>
+          <img src="/images/light-on.svg">
+      </button>
     </div>
     """
   end

@@ -12,9 +12,8 @@ defmodule LiveViewStudioWeb.LightLive do
     <h1>Front Porch Ligth </h1>
     <div id="light">
       <div class="meter">
-        <span style="width: <%= @brightness %>%">
+        <span style={"width: #{@brightness}%"}>
           <%= @brightness %>%
-
         </span>
       </div>
     </div>

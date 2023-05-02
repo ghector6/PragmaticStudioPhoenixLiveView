@@ -37,6 +37,12 @@ defmodule LiveViewStudioWeb.LightLive do
     {:noreply, socket}
   end
 
+  def handle_event("up", _, socket) do
+    brightness = socket.assigns.brightness + 10
+    socket = assign(socket, brightness: brightness)
+    {:noreply, socket}
+  end
+
   def handle_event("off", _, socket) do
     socket = assign(socket, brightness: 0)
     {:noreply, socket}

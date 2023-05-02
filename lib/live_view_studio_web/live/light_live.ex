@@ -3,6 +3,7 @@ defmodule LiveViewStudioWeb.LightLive do
 
   def mount(_params, _session, socket) do
     socket = assign(socket, brightness: 10)
+    #IO.inspect(socket)
     {:ok, socket}
   end
 

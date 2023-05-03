@@ -28,6 +28,9 @@ defmodule LiveViewStudioWeb.LightLive do
       <button phx-click="on">
           <img src="/images/light-on.svg">
       </button>
+      <button phx-click="fire">
+          <img src="/images/fire.svg">
+      </button>
     </div>
     """
   end

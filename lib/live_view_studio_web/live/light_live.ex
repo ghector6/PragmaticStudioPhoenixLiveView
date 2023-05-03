@@ -54,4 +54,9 @@ defmodule LiveViewStudioWeb.LightLive do
     socket = assign(socket, brightness: 0)
     {:noreply, socket}
   end
+
+  def handle_event("fire", _, socket) do
+    socket = assign(socket, brightness: Enum.random(1..100))
+    {:noreply, socket}
+  end
 end

@@ -39,6 +39,7 @@ defmodule LiveViewStudioWeb.LightLive do
 
   def handle_event("on", _, socket) do
     IO.inspect(self(), label: "EVENT")
+    #raise "⚠️  This process will die"
     socket = assign(socket, brightness: 100)
     {:noreply, socket}
   end
